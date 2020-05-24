@@ -89,32 +89,24 @@ recriado contendo toda a estrutura definida.
  
 **Exemplo:**
 
-* Criar Novo
-    ```bash
-     cd archetype
-     mvn clean install -DskipTests
-    ```
-
-* Customizado
+* Criar
     ```bash
      mvn archetype:create-from-project
      cd target/generated-sources/archetype
      mvn clean install
      ```
 
-* Gerar Projeto
+* Gerar
     ```bash
     mvn archetype:generate \
-    -DgroupId=YOUR_PACKAGE \
-    -DartifactId=YOUR_PROJECT_NAME \
-    -Dversion=YOUR_VERSION \ 
     -DarchetypeCatalog=local \
+    -DgroupId=br.com.mypackage \
+    -DartifactId=MyProjectName \
     -DinteractiveMode=false \
     -DarchetypeGroupId=br.com.svalgas \
     -DarchetypeArtifactId=springboot-restfull-archetype
     
     ```
-
 
 ## Documentacao API
 A documentação do swagger pode ser acessada através do endereco **/swagger-ui.html**.
